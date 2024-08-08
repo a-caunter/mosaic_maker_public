@@ -19,6 +19,8 @@ Note that all syntax is specific to Windows.
 
 Follow the steps below to launch and use the application:
 
+0. Download all three files from this [Google Drive folder](https://drive.google.com/drive/folders/1zxBbr-NmaZj5suLmB7TihhcRWJS3H-Wq) and place them in `<repo directory>/example/`.   
+
 1. Locate "session_config.json" in '<repo directory>/src/', open it, and change the "working directory" to `<repo directory>/example/`.
 
 2. From the repo directory, lauch the file `python src/mosaic_maker.py`. A GUI titled "Mosaic Maker" appears, and the terminal should read "No more events". 
