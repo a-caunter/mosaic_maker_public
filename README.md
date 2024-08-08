@@ -31,37 +31,37 @@ Follow the steps below to launch and use the application:
 
 6. Note: MosaicMaker uses custom library classification files to store information about a library of images for fast access. This repo is delivered with a sample library classification file from a library of images I shot during a ski day at Brighton Resort.
 
-Inside the MosaicTool tab, click "Load Library Classification" and open "lib_classification.pkl" from `<repo directory>/example/`. 
+7. Inside the MosaicTool tab, click "Load Library Classification" and open "lib_classification.pkl" from `<repo directory>/example/`.
 
-Click "Load" next to "Select Base Image". If you had multiple BaseImageTools open, they would be selectable from the dropdown.
+8. Click "Load" next to "Select Base Image". If you had multiple BaseImageTools open, they would be selectable from the dropdown.
 
-Fill in the fields with the following values:
+9. Fill in the fields with the following values:
 
+"""
 Block Resolution: 256
 Num Blocks Width: 32
 Color Delta Filter: 100
 Target Color Delta: 50
 Shape Match Filter: 0
 Image Repeat Filter: 0
+"""
 
-Click "Build Mosaic".
+10. Click "Build Mosaic". The application will be frozen while the mosaic is built, but you can confirm the process is happening by observing the readout on the terminal. The mosaic will appear in the MosaicTool window when complete. Don't expect it to be anything special at this point! But it should have been fast.
 
-The application will be frozen while the mosaic is built, but you can confirm the process is happening by observing the readout on the terminal. The mosaic will appear in the MosaicTool window when complete.
+11. For better results, enter the following values in the fields. Processing will take longer, but should be under a minute.
 
-Don't expect it to be anything special at this point! But it should have been fast.
-
-7. For better results, enter the following values in the fields. Processing will take longer, but should be under a minute.
-
+"""
 Block Resolution: 256
 Num Blocks Width: 32
 Color Delta Filter: 100
 Target Color Delta: 50
 Shape Match Filter: 100
 Image Repeat Filter: 6
+"""
 
 Using Shape Matching forces the algorithm to select an image that fits the underlying shape of the base image, increasing likeness.
 
-8. Play around with values and have fun!
+Play around with values and have fun!
 
 Note: It is possible to lock up your computer by comsuming all available memory. This happens when too many image pixels are being processed, for example by making the "Num Blocks Width" value far too high. Force close the program - memory is released. 
 
